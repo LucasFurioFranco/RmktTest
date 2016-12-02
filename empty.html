@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Empty</title>
+</head>
+
+<body>
+	<script>
+		var dataLayer = [{
+			'pageType': 'iframe_contato_email'
+		}];
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KCGTX5T');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	<form id="form_contact_email" action="contato_email_enviado.php" method="get">
+		Assunto
+		<input id="radio_assunto1" type="radio" value="assunto1" checked> Assunto1
+		<input id="radio_assunto2" type="radio" value="assunto2"> Assunto2
+		<br>
+		<br> Seu e-mail:
+		<input type="email" name="email" size=50 required></input>
+		<br>
+		<br> Seu nome:
+		<input type='text' name='name' size=50 required></input>
+		<br>
+		<br> Mensagem
+		<br>
+		<textarea cols='50' rows=8 required></textarea>
+		<br>
+		<input id="envia_email" type='submit' value="Enviar"></input>
+		<input id="apaga_campos" type='reset' value='Apagar Campos'></input>
+
+	</form>
+
+</body>
+
+</html>
